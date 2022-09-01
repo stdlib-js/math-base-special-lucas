@@ -52,30 +52,38 @@ The sequence is defined by the recurrence relation
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-special-lucas
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var lucas = require( '@stdlib/math-base-special-lucas' );
+lucas = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lucas@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var lucas = require( 'path/to/vendor/umd/math-base-special-lucas/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lucas@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.lucas;
+})();
+</script>
 ```
 
 #### lucas( n )
@@ -139,8 +147,13 @@ var v = lucas( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var lucas = require( '@stdlib/math-base-special-lucas' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lucas@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var v;
 var i;
@@ -149,6 +162,11 @@ for ( i = 0; i < 77; i++ ) {
     v = lucas( i );
     console.log( v );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -245,9 +263,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/fibonacci]: https://github.com/stdlib-js/math-base-special-fibonacci
+[@stdlib/math/base/special/fibonacci]: https://github.com/stdlib-js/math-base-special-fibonacci/tree/umd
 
-[@stdlib/math/base/special/negalucas]: https://github.com/stdlib-js/math-base-special-negalucas
+[@stdlib/math/base/special/negalucas]: https://github.com/stdlib-js/math-base-special-negalucas/tree/umd
 
 <!-- </related-links> -->
 
