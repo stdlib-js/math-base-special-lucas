@@ -18,7 +18,9 @@
     "benchmark": "./benchmark",
     "doc": "./docs",
     "example": "./examples",
+    "include": "./include",
     "lib": "./lib",
+    "src": "./src",
     "test": "./test"
   },
   "types": "./docs/types",
@@ -40,7 +42,7 @@
     "@stdlib/constants-float64-max-safe-nth-lucas": "^0.0.8",
     "@stdlib/math-base-assert-is-integer": "^0.0.7",
     "@stdlib/math-base-assert-is-nan": "^0.0.8",
-    "@stdlib/math-base-napi-unary": "^0.0.8",
+    "@stdlib/math-base-napi-unary": "^0.0.9",
     "@stdlib/utils-library-manifest": "^0.0.8"
   },
   "devDependencies": {
