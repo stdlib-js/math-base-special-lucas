@@ -29,7 +29,7 @@ var lucas = require( './../../dist' );
 // FIXTURES //
 
 // For reference values, see https://oeis.org/A000032:
-var LUCAS = require( './../../dist/lucas.json' );
+var LUCAS = require( './../../lib/lucas.json' );
 
 
 // TESTS //
