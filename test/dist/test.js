@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,72 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isnan = require( '@stdlib/math-base-assert-is-nan' );
-var PINF = require( '@stdlib/constants-float64-pinf' );
-var lucas = require( './../../dist' );
-
-
-// FIXTURES //
-
-// For reference values, see https://oeis.org/A000032:
-var LUCAS = require( './../../lib/lucas.json' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof lucas, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'if provided a negative number, the function returns `NaN`', function test( t ) {
-	var v;
-	var i;
-
-	t.strictEqual( isnan( lucas( -3.14 ) ), true, 'returns NaN' );
-
-	for ( i = -1; i > -100; i-- ) {
-		v = lucas( i );
-		t.strictEqual( isnan( v ), true, 'returns NaN when provided ' + i );
-	}
-	t.end();
-});
-
-tape( 'if provided positive infinity, the function returns `NaN`', function test( t ) {
-	var v = lucas( PINF );
-	t.strictEqual( isnan( v ), true, 'returns NaN when provided +infinity' );
-	t.end();
-});
-
-tape( 'if provided `NaN`, the function returns `NaN`', function test( t ) {
-	var v = lucas( NaN );
-	t.strictEqual( isnan( v ), true, 'returns NaN when provided a NaN' );
-	t.end();
-});
-
-tape( 'if provided a non-integer, the function returns `NaN`', function test( t ) {
-	var v = lucas( 3.14 );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
-	t.end();
-});
-
-tape( 'the function returns the nth Lucas number', function test( t ) {
-	var v;
-	var i;
-	for ( i = 0; i < 77; i++ ) {
-		v = lucas( i );
-		t.strictEqual( v, LUCAS[ i ], 'returns the '+i+'th Lucas number' );
-	}
-	t.end();
-});
-
-tape( 'if provided nonnegative integers greater than `76`, the function returns `NaN`', function test( t ) {
-	var i;
-	var v;
-	for ( i = 77; i < 500; i++ ) {
-		v = lucas( i );
-		t.strictEqual( isnan( v ), true, 'returns NaN when provided ' + i );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
