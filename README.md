@@ -78,6 +78,11 @@ L_n = \begin{cases}2 & \textrm{if}\ n = 0\\1 & \textrm{if}\ n = 1\\L_{n-1} + L_{
 ## Usage
 
 ```javascript
+import lucas from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lucas@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-lucas/tags). For example,
+
+```javascript
 import lucas from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lucas@v0.2.1-esm/index.mjs';
 ```
 
@@ -148,7 +153,7 @@ var v = lucas( NaN );
 <body>
 <script type="module">
 
-import lucas from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lucas@v0.2.1-esm/index.mjs';
+import lucas from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lucas@esm/index.mjs';
 
 var v;
 var i;
