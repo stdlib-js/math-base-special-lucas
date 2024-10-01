@@ -6,12 +6,23 @@
 
 ## Unreleased (2024-10-01)
 
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`16c903b`](https://github.com/stdlib-js/stdlib/commit/16c903bdbd31c7d81bc3d6811e942e35c6de38e6) - add missing `native.js` and fix indentation [(#2975)](https://github.com/stdlib-js/stdlib/pull/2975)
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`16c903b`](https://github.com/stdlib-js/stdlib/commit/16c903bdbd31c7d81bc3d6811e942e35c6de38e6) - **fix:** add missing `native.js` and fix indentation [(#2975)](https://github.com/stdlib-js/stdlib/pull/2975) _(by Gunj Joshi)_
 -   [`2777e4b`](https://github.com/stdlib-js/stdlib/commit/2777e4be161869d09406e3b17947d24c64b47af2) - **bench:** resolve lint errors in benchmarks _(by Athan Reines)_
 
 </details>
@@ -24,9 +35,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Gunj Joshi
 
 </section>
 
