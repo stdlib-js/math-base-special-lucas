@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-27)
+## Unreleased (2025-11-05)
 
 <section class="bug-fixes">
 
@@ -44,6 +44,7 @@
 
 <details>
 
+-   [`1270286`](https://github.com/stdlib-js/stdlib/commit/127028651dc3ed5047bd8bf7e7424909b74af979) - **chore:** add structured package data for `math/base/special/lucas` [(#8389)](https://github.com/stdlib-js/stdlib/pull/8389) _(by Manvith M)_
 -   [`81f904d`](https://github.com/stdlib-js/stdlib/commit/81f904da25808197e2ae83ebf9c8b26860855e7c) - **bench:** fix failing C benchmarks by using `round` and `roundf` [(#7980)](https://github.com/stdlib-js/stdlib/pull/7980) _(by Gunj Joshi)_
 -   [`3d340e2`](https://github.com/stdlib-js/stdlib/commit/3d340e2d72c1601c2286210f89d182e4132befed) - **refactor:** modify C implementation to accept `double` instead of `int32` in `math/base/special/lucas` [(#7936)](https://github.com/stdlib-js/stdlib/pull/7936) _(by Gunj Joshi)_
 -   [`fc438e0`](https://github.com/stdlib-js/stdlib/commit/fc438e0edbad0689d6923d6f3edb959b96597662) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
@@ -67,10 +68,11 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Gunj Joshi
+-   Manvith M
 -   Philipp Burckhardt
 
 </section>
