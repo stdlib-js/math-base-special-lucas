@@ -80,6 +80,11 @@ L_n = \begin{cases}2 & \textrm{if}\ n = 0\\1 & \textrm{if}\ n = 1\\L_{n-1} + L_{
 To use in Observable,
 
 ```javascript
+lucas = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lucas@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-lucas/tags). For example,
+
+```javascript
 lucas = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lucas@v0.3.0-umd/browser.js' )
 ```
 
@@ -92,7 +97,7 @@ var lucas = require( 'path/to/vendor/umd/math-base-special-lucas/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lucas@v0.3.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lucas@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -170,7 +175,7 @@ var v = lucas( NaN );
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lucas@v0.3.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lucas@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
