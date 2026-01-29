@@ -78,7 +78,7 @@ L_n = \begin{cases}2 & \textrm{if}\ n = 0\\1 & \textrm{if}\ n = 1\\L_{n-1} + L_{
 ## Usage
 
 ```javascript
-import lucas from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lucas@deno/mod.js';
+import lucas from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lucas@v0.3.0-deno/mod.js';
 ```
 
 #### lucas( n )
@@ -143,7 +143,7 @@ var v = lucas( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import lucas from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lucas@deno/mod.js';
+import lucas from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lucas@v0.3.0-deno/mod.js';
 
 var v;
 var i;
